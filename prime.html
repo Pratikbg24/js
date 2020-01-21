@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+		<script>
+	    function disp_prime()
+		{
+			var j,i,n,flag=true,no;
+				n=document.myform.n.value;
+				n= parseInt(n);
+				for(no=0;no<=n;no++)
+				{
+					for(i=1;i<=no;i++)
+					{
+						flag=true;
+						for(j=2;j<i;j++)
+						{
+							if(i%j == 0)
+							{
+								flag=false;
+								break;
+							}
+						
+						}
+						
+					}
+					if(flag==true)
+					{
+				//		alert("No is Prime="+no);
+						console.log("Number is Prime="+no)
+					}
+					else
+					{
+					//	alert("No is Not Prime="+no);
+						console.log("Number is Not Prime="+no)
+					
+					}
+				}
+		}
+
+		</script>
+	<body>
+		<form id = "form_id" name="myform" method="post">
+			<div class="d-flex justify-content-center" style="margin: auto;padding: 50px;background: antiquewhite;align-content: center;">
+			<label>Prime No:</label>	<input type="text" name="n" />
+			<input type="button" value="submit" name="submit" onclick="disp_prime()" />
+			</div>	
+		</form>
+	</body>
+</html>
