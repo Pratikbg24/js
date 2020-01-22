@@ -12,18 +12,24 @@
 			</div>
 		
 			<h2> Login</h2>
-			<form id="form_id" method="post" name="myform">
-				<label>User Name :</label>
-				<input type="text" name="username" id="username"/>
-				<label>Password :</label>
-				<input type="password" name="password" id="password"/>
-				<button onclick="validate()">Login</button>
+			<form id="form_id" class="" method="post" name="myform">
+				<div class="form-group">
+					<label for="exampleInputEmail1">User Name :</label>
+					<input type="text" name="username" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter username">
+					
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputEmail1">Password :</label>
+					<input type="password" name="password" class="form-control" id="password" aria-describedby="passwordHelp" placeholder="Enter password">
+					
+				  </div>
+				<button class="btn" onclick="validate()">Login</button>
 			</form>
 		</div>
 	</div>
 	
 
-
-</body>
 <script src="Login.js"></script>
+</body>
+
 </html>

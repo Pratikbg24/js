@@ -15,7 +15,6 @@ h2
 		padding: 10px 50px 25px;
 		border: 2px solid gray;
 		border-radius: 10px;
-		font-family: raleway;
 		float:left;
 		margin-top:50px;
 	}
@@ -39,7 +38,7 @@ h2
 	{
 		color: #464646;
 		text-shadow: 0 1px 0 #fff;
-		font-size: 14px;
+		font-size: 1.4em;
 		font-weight: bold;
 	}
 	
