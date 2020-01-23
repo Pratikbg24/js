@@ -2,7 +2,7 @@
 // Below function Executes on click of login button.
 function validate()
 {
-	var attempt = 0;
+	var attempt = 3;
 	var username = document.getElementById("username").value;
 	var password = document.getElementById("password").value;
 	if(username === "" || password === "")
